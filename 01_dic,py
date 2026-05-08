@@ -1,0 +1,51 @@
+# li = []
+# li.append('푸바오')
+# print(li)
+
+# li.append(100) # 파이썬은 문자열 다음 정수 또는 실수가 올 수 있음
+# print(li)
+
+# li.append(3.141592)
+# print(li)
+
+# print(li[0])  # ['푸바오'] --> 가장 첫번 째 있는 내용을 가져옴
+# print(li[2])  # [3.141592]
+# print(li[-1]) # [3.141592]
+# print(li[1:4])
+# print(li[1:]) # 끝 번호 생략 가능(끝까지)
+# print(li[:2]) # 첫 번호 생략 가능(처음부터)
+# print(li[:]) # 전체
+# print(li[::-1]) # 반전
+
+# a = {}
+# print(a)
+
+# b = dict()
+# print(b) 
+
+# menu = {'김밥':3000, '라면':5000}
+# print(menu) 
+
+# print(menu['김밥'])
+# print(menu['라면'])
+
+
+# a = {30, 20, 10} 
+# print(a) # {10, 20, 30}
+
+# b = set() # 빈 세트
+# print(b)
+
+# c = {40, 20}
+# print(c)
+
+# # 교집합
+# print(a & c)
+
+# # 합집합
+# print(a | c)
+
+# # 차집합
+# print(a - c)
+# print(c - a)
+
