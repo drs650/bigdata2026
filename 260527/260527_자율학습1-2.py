@@ -36,8 +36,18 @@ while True:
         print(result)
 
     elif num == '3':
-        want_input = input("원하는 메뉴 입력 : ")
+        order_list = []
+        total = 0
 
-        print("\n< 입력조건의 메뉴 목록 >")
-        result = [[want_input, cafe_menu[want_input][0], cafe_menu[want_input][1]]]
-        print(result)
+        while True:
+            order_input = input("주문 메뉴 입력(0:종료) ")
+            if order_input == '0':
+                break
+            else :
+                count = int(input("수량 입력: "))
+
+                order_list.append([order_input, cafe_menu[order_input][0], count])
+                total += (cafe_menu[order_input][0] *  count)
+
+        print("주문 내역 확인 : ", order_list)
+        print(f'지불 총금액: {total}원')
