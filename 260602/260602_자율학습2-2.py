@@ -54,3 +54,21 @@ while True:
         avg = total_grade / total_count
         print(f'평균평점 : {avg:.2f}\n')
     
+    elif num == 3:
+        total_reg = int(input('총 등록 학기수 입력: '))
+        if total_reg >= 8 :
+            print('졸업학기 충족')
+        else:
+            print(f'{8-total_reg}학기 부족\n')
+                  
+        total_fin = int(input('수강 완료 학점수 입력: '))
+        if total_fin >= 120:
+            print(f'졸업학점 충족')
+        else:
+            print(f'{120-total_fin}학점 부족\n')
+        total_avg = float(input('총 평균 평점 입력: '))
+        if total_avg >= 2.5:
+            print('졸업 평균평점 충족')
+        else:
+            print(f'{2.5-total_avg:.2f} 평균평점 낮음')
+    
